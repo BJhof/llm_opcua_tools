@@ -1,0 +1,55 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "read_variable",
+      "description": "Read an OPC UA variable by its NodeId and print its current value.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "parameter": { "type": "string", "description": "A descriptive name for the variable (for logging purposes)." },
+          "nodeid": { "type": "string", "description": "The OPC UA NodeId string identifying the variable (e.g., 'ns=4;i=11')." },
+          "server_url": { "type": "string", "description": "The server url you need to connect to." }
+        },
+        "required": ["parameter", "nodeid", "server_url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "write_variable",
+      "description": "Write a fixed value to a specific OPC UA variable.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "parameter": { "type": "string", "description": "A descriptive name for the variable (for logging purposes)." },
+          "nodeid": { "type": "string", "description": "The OPC UA NodeId string identifying the variable (e.g., 'ns=4;i=11')." },
+          "datatype": { "type": "string", "description": "The name of the OPC UA VariantType (e.g., 'Float', 'Int16', 'String')." },
+          "value": { "type": ["number", "string", "integer"], "description": "The value to set for the specified variable." },
+          "server_url": { "type": "string", "description": "The server url you need to connect to." }
+        },
+        "required": ["parameter", "nodeid", "datatype", "value", "server_url"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "adjust_variable",
+      "description": "Adjust an OPC UA variable by a specified amount, either absolute or percentage.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "parameter": { "type": "string", "description": "A descriptive name for the variable (for logging purposes)." },
+          "nodeid": { "type": "string", "description": "The OPC UA NodeId string identifying the variable (e.g., 'ns=4;i=11')." },
+          "datatype": { "type": "string", "description": "The name of the OPC UA VariantType (e.g., 'Float', 'Int16', 'String')." },
+          "delta": { "type": ["number", "integer"], "description": "The amount to change the variable by. Take as stated in datatype (Float = 10.0; Int16 = 10)." },
+          "server_url": { "type": "string", "description": "The server url you need to connect to." },
+          "unit": { "type": "string", "description": "The unit of adjustment. If 'percent', the delta is applied as a percentage of the current value; otherwise, it is applied as an absolute change." }
+        },
+        "required": ["parameter", "nodeid", "datatype", "delta", "server_url"]
+      }
+    }
+  }
+]
