@@ -1,8 +1,8 @@
 This repository contains supporting material for the paper:
 
-**Beyond Touch HMI: Control to your machines in natural language by utilizing LLMs and OPC-UA**
+**Beyond touch-based HMI: Control your machines in natural language by utilizing large language models and OPC UA**
 
-DOI: TBD
+DOI: https://doi.org/10.48550/arXiv.2510.11300
 
 **Contents**
 - tools_mcp.py: Contains the three tools (read,write,adjust) and the launch of the mcp-server with gradio
