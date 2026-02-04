@@ -1,6 +1,6 @@
 This repository contains supporting material for the paper:
 
-**Beyond touch-based HMI: Control your machines in natural language by utilizing large language models and OPC UA**
+**Beyond touch-based human-machine-interface: Control your machines in natural language by utilizing large language models and OPC UA**
 
 DOI: https://doi.org/10.48550/arXiv.2510.11300
 
