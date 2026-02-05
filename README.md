@@ -6,7 +6,7 @@ DOI: https://doi.org/10.48550/arXiv.2510.11300
 
 ## 🎥 System Demonstration Video
 
-[![Watch the demo](thumbnail.png)]([https://drive.google.com/file/d/1Q1cWu_KsNacA-MZ0tYXC9skanfNnj8zz/view?usp=sharing))
+[![Watch the demo](thumbnail.png)](https://drive.google.com/file/d/1Q1cWu_KsNacA-MZ0tYXC9skanfNnj8zz/view?usp=sharing)
 
 
 **Contents**
